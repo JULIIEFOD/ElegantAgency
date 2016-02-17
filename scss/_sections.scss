@@ -1,0 +1,178 @@
+.services {
+    margin-bottom: 120px;
+    &__item {
+        margin-top: 65px;
+        float: left;
+        width: 365px;
+        margin-right: 36px;
+        
+        p.item-pic {
+            text-align: center;
+            margin-bottom: 30px;
+            height: 150px;
+            img {
+                width: auto;
+            }
+        }
+        .item-name {
+            
+            color:  #222222;
+            font-size: 24px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 23px;
+        }
+        .item-description  {
+            
+            color:  #222222;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+            line-height: 35px;
+        }
+        &:last-child{
+            margin-right: 0;
+            .item-pic {
+                padding-top: 20px;
+            }
+        }
+    }
+}
+
+.preview {
+    background-image: url("../img/bg-preview.jpg");
+    @include bg-image;
+    
+    .preview-content {
+        background-image: url("../img/iphone-bg.png");
+        background-position: bottom right 100px;
+        background-repeat: no-repeat;
+        background-size: auto;
+        padding-top: 163px;
+        padding-bottom: 96px;
+        .preview-name {
+            
+            color: #ffffff;
+            font-size: 45px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin: 0;
+            
+
+
+        }
+        .preview-text {
+            
+            color: #ffffff;
+            font-size: 22px;
+            width: 516px;
+            font-weight: 100;
+            line-height: 28px;
+            margin: 0;
+            margin-bottom: 60px;
+            
+
+        }
+        .more {
+            
+            color: #ffffff;
+            font-size: 18px; 
+            text-decoration: underline;
+            &:hover {
+                text-decoration: none;
+            }
+           
+        }
+    }
+    
+}
+
+.works {
+    margin-bottom: 80px;
+    .collection {
+        margin-top: 91px;
+       
+        
+        .work {
+            float: left;
+            margin-right: 30px;
+            width: 370px;
+            height: 420px;
+            cursor: pointer;
+            
+            &:last-child{
+                margin-right: 0;
+            }
+            .work-hover {
+                display: none;
+                width: 370px;
+                height: 420px;
+                opacity: 0.7;
+                background-image: url("../img/Rectangle.png");
+                @include bg-image;
+                padding-top: 180px;
+                .work-hover-icons {
+                .name {
+                    
+                    color: #ffffff;
+                    font-size: 22px; 
+                    text-align: center;
+                    text-transform: uppercase;
+                    
+                }
+                .chain {
+                    margin-top: 42px;
+                    text-align: center;
+                    img {
+                    height: 100%;
+                        
+                    }
+                   
+                }
+                }
+            }
+            &:hover .work-hover{
+            display: block;
+            }
+            
+        }
+            .work1 {
+                background-image: url("../img/kinderen.jpg");
+                @include bg-image;
+                }
+            .work2 {
+                background-image: url("../img/jetindus.jpg");
+                @include bg-image;
+            }
+            .work3 {
+                background-image: url("../img/trimplement.jpg");
+                @include bg-image;
+            }
+                       
+    }
+    .more-button {
+       width: 100%;
+        margin-top: 80px;
+        button{
+                color: #222222;
+                font-size: 24px; 
+                height: 60px;
+                padding: 20px 150px;
+                border: 3px solid #222222;
+                text-transform: uppercase;
+                background-color: white;
+                display: block;
+                margin: auto;
+                line-height: 16px;
+            
+      
+            
+        }
+        button:active {
+            background-color: black;
+            color: white;
+        }
+        
+
+    }
+}

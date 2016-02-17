@@ -1,0 +1,80 @@
+header {
+    background-image: url("../img/HERO%20Img.jpg");
+    @include bg-image;
+    padding-bottom: 26px;
+    padding-top: 57px;
+        .header-top {
+            
+            .header-logo{
+                
+                width: auto;
+                float: left;
+            }
+           
+            .header-menu {
+                
+                
+                margin-right: 76px;
+                float: right;
+                ul{ margin: 0;
+                li {
+                    
+                    color: #fffffe;
+                    font-size: 14px;
+                    font-weight: 600;
+                    float: left;
+                    text-transform: uppercase;
+                    list-style: none;
+                    margin-left: 50px;
+                    
+                    &:hover {
+                        text-decoration: underline;
+                        
+                    }
+
+                }
+                }
+            }
+            
+        }
+            .header-main  {
+                    margin-top: 240px;
+                &__agency {
+                    
+                    font-family: 'Raleway', sans-serif;
+                    color: #ffffff;
+                    font-size: 48px;
+                    font-weight: bold;
+                    text-align: center;
+                    text-transform:uppercase; 
+                }
+                .line {
+                    background-color: white !important;
+                    margin-top: 40px;
+                    }
+                &__text {
+                    
+                    color: #fffefe;
+                    font-size: 24px;
+                    font-weight: 400;
+                    text-align: center;
+                    width: 596px;
+                    margin: auto;
+                    margin-top: 36px;
+                }
+                .arrow {
+                    text-align: center;
+                    margin-top: 255px;
+                    img {
+                    &:hover {
+                             -webkit-transform: rotate(270deg); /* Safari and Chrome */
+        -moz-transform: rotate(180deg);   /* Firefox */
+        -ms-transform: rotate(180deg);   /* IE 9 */
+        -o-transform: rotate(180deg);   /* Opera */
+        transform: rotate(180deg);
+                        }
+                        }
+                   
+                }
+            }
+}

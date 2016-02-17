@@ -1,0 +1,57 @@
+* {
+//    margin: 0;
+    &,
+    &:after,
+    &:before {
+    @include box-sizing;
+    }
+}
+
+
+body {
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.clear {
+        &::after{
+            content: " ";
+            clear: both;
+            display: block;
+        }
+    }
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+
+}
+button:focus {
+    outline: none;
+	}
+
+.line {
+    width: 86px;
+    height: 3px;
+    margin: auto;
+    margin-top: 63px;
+    background-color: black;
+
+}
+
+
+.section-name {
+    font-family: Raleway;
+    color: #222222;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 108px;
+}
